@@ -1,4 +1,5 @@
 import {
+  getAlbumByArtist,
   getAlbumWithFewestGenres,
   getAlbumWithMostOfGenres,
   getAlbumWithTeMostOfSale,
@@ -77,6 +78,12 @@ if (command === "most-genre") {
 } else if (command === 'year') {
   const year = Number(process.argv[3]);
   getAlbumWithYearOf(bestSellingAlbums, year);
+} else if (command === 'Michael Jackson') {
+  const artist = "Michael Jackson";
+  getAlbumByArtist(bestSellingAlbums, artist);
+} else if (command === 'rock') {
+  const genre = "rock";
+  getAlbumByGenre(bestSellingAlbums, genre);
 } else {
   console.log("i do not understand", command);
 }

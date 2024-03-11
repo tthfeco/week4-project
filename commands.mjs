@@ -36,3 +36,21 @@ export function getAlbumWithYearOf(albums, year) {
     }
   }
 }
+
+export function getAlbumByArtist(albums, artist) {
+  for (let i = 0; i < albums.length; i++) {
+    if (albums[i].artist === artist) {
+      console.log(albums[i]);
+      break; // exit the for loop
+    }
+  }
+}
+
+export function getAlbumByGenre(albums, genre) {
+  for (let i = 0; i < albums.length; i++) {
+    if (albums[i].genre === genre) {
+      console.log(albums[i]);
+      break; // exit the for loop
+    }
+  }
+}
