@@ -1,5 +1,6 @@
 import {
   getAlbumByArtist,
+  getAlbumByGenre,
   getAlbumWithFewestGenres,
   getAlbumWithMostOfGenres,
   getAlbumWithTeMostOfSale,

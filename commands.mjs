@@ -48,7 +48,7 @@ export function getAlbumByArtist(albums, artist) {
 
 export function getAlbumByGenre(albums, genre) {
   for (let i = 0; i < albums.length; i++) {
-    if (albums[i].genre === genre) {
+    if (albums[i].genres.includes(genre)) {
       console.log(albums[i]);
       break; // exit the for loop
     }
