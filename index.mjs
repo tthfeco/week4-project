@@ -82,8 +82,8 @@ if (command === "most-genre") {
 } else if (command === 'Michael Jackson') {
   const artist = "Michael Jackson";
   getAlbumByArtist(bestSellingAlbums, artist);
-} else if (command === 'rock') {
-  const genre = "rock";
+} else if (command === 'pop') {
+  const genre = "pop";
   getAlbumByGenre(bestSellingAlbums, genre);
 } else {
   console.log("i do not understand", command);

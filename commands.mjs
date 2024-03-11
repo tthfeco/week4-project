@@ -47,10 +47,13 @@ export function getAlbumByArtist(albums, artist) {
 }
 
 export function getAlbumByGenre(albums, genre) {
+  // let result = [];
   for (let i = 0; i < albums.length; i++) {
     if (albums[i].genres.includes(genre)) {
+      // result.push(albums[i]);
       console.log(albums[i]);
-      break; // exit the for loop
+      // break; // exit the for loop
     }
   }
+  // console.log(result);
 }
